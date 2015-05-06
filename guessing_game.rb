@@ -8,7 +8,7 @@ junk = true
       print "Decimals? I'm not that evil. That guess doesn't count. Try again: "
       guess = gets.chomp
     elsif guess.to_i > 100 || guess.to_i < 1
-      print "That guess doesn't count--this time try a number between 1 and 100: "
+      print "That guess doesn't count--this time make sure the number is between 1 and 100: "
       guess = gets.chomp
     else
       junk = false
@@ -36,7 +36,6 @@ def check_array(guess_array, guess)
 end
 
 secret_number = rand(1..100)
-puts secret_number
 print "You have 5 chances to guess a number between 1 and 100: "
 guess = ""
 guess_count = 0
